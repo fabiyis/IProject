@@ -1,4 +1,3 @@
-// App.jsx
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import NavBar from './components/NavBar';
@@ -23,14 +22,15 @@ const App = () => {
   return (
     <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
       <NavBar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <Home isDarkMode={isDarkMode} />
-     
+      <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      
       {/* Add other components or sections as needed */}
     </div>
   );
 }
 
 export default App;
+
 
 
 
