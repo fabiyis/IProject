@@ -4,6 +4,7 @@ import { Button, Navbar } from 'flowbite-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
+
 // eslint-disable-next-line react/prop-types
 const NavBar = ({ isDarkMode, toggleDarkMode }) => {
     console.log('isDarkMode in NavBar:', isDarkMode);

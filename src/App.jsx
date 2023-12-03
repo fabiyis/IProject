@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
+import FooterComp from './components/FooterComp';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
     <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
       <NavBar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <FooterComp isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       
       {/* Add other components or sections as needed */}
     </div>
