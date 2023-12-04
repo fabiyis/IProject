@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import FooterComp from './components/FooterComp';
-
+import About from './pages/About';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,17 +22,25 @@ const App = () => {
   };
 
   return (
-    <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
-      <NavBar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <FooterComp isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      
-      {/* Add other components or sections as needed */}
-    </div>
+    <Router>
+      <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
+        <NavBar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+
+        <Routes>
+          <Route path="/" element={<Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
+          <Route path="/about" element={<About />} />
+          {/* Add other routes as needed */}
+        </Routes>
+
+        <FooterComp isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
+
+
 
 
 
