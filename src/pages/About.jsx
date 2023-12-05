@@ -1,29 +1,27 @@
-
 'use client';
 
-import { Card } from 'flowbite-react';
+function About() {
+  const containerStyle = {
+    padding: '0 1rem',
+  };
 
-function Component() {
   return (
-    <div className="flex items-center justify-center h-screen">
-    <Card className="max-w-md p-6 rounded-lg shadow-md bg-white dark:bg-gray-800">
-      <img src="/img/seg1.JPG" alt="Profile" className="w-40 h-40 object-cover rounded-full mb-4" />
-      <h5 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
-        About Me
-      </h5>
-      <p className="text-gray-700 dark:text-gray-400 mb-4">
-        Hi there! I am <span className="text-red-600">Segun</span>, a passionate frontend web developer based in Lagos, Nigeria.
-      </p>
-      <p className="text-gray-700 dark:text-gray-400 mb-4">
-        I specialize in creating modern, responsive, and user-friendly web applications using technologies like HTML, JavaScript, React, and Node.js.
-      </p>
-      <p className="text-gray-700 dark:text-gray-400 mb-4">
-        Living in the vibrant city of Lagos, I am dedicated to crafting digital experiences that not only meet the needs of users but also exceed expectations.
-      </p>
-      {/* Add more content or sections as needed */}
-    </Card>
-  </div>
+    <div className="min-h-screen flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: 'url(/img/pexels-monstera-6621189.jpg)' }}>
+      <div className="text-center text-white" style={containerStyle}>
+        <h5 className="-mt-10 text-5xl font-bold mb-2 text-orange-500 border-b-4 border-orange-500 inline-block">
+          About Me
+        </h5>
+        <p className="mb-4 text-slate-800 font-bold text-2xl hover:bg-blue-500 hover:text-white transition-all duration-300">
+          Hi there! I am <span className="text-orange-500 font-bold text-3xl">Segun</span>, a passionate frontend web developer based in Lagos, Nigeria.<br/>
+          I specialize in creating modern, responsive, and user-friendly <br/> web applications using technologies like HTML, JavaScript, React, and Node.js.
+        </p>
+      </div>
+    </div>
   );
 }
 
-export default Component;
+export default About;
+
+
+
+

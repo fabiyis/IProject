@@ -5,6 +5,7 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import FooterComp from './components/FooterComp';
 import About from './pages/About';
+import Skills from './pages/Skills';
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -29,11 +30,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />} />
           <Route path="/about" element={<About />} />
-          {/* Add other routes as needed */}
+          <Route path="/skills" element={<Skills />} />
+          
         </Routes>
 
-        <FooterComp isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       </div>
+      <FooterComp isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     </Router>
   );
 };
