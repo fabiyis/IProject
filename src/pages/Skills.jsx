@@ -1,28 +1,26 @@
 'use client';
-
 import { Progress } from 'flowbite-react';
 
 // eslint-disable-next-line react/prop-types
 function Component({ isDarkMode }) {
-  const containerClass = `container mx-auto mt-10 px-6 md:px-26 lg:px-52 ${isDarkMode ? 'dark' : 'light'}`;
-  const bgColorClass = `bg-${isDarkMode ? 'gray-800' : 'white'}`;
-  const textColorClass = isDarkMode ? 'text-white' : 'text-gray-800';
+  const containerClass = `container mx-auto px-6 md:px-26 lg:px-52 ${isDarkMode ? 'dark' : 'light'}`;
+  
+  const textColorClass = isDarkMode ? 'text-white' : 'text-blue-600';
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: 'url(/img/off1.jpeg)' }}>
-    <div className={`${containerClass} ${bgColorClass} ${textColorClass} py-5 mb-20 mt-5`}>
+    <div className="min-h-screen flex flex-col justify-center items-center bg-cover bg-center" style={{ backgroundImage: 'url(/img/Laptop-Se.jpg)' }}>
+    <div className={`${containerClass}   ${textColorClass} py-5 -mt-20 bg-stone-700 `}>
       <div className="mb-2">
-        <div className={`text-2xl font-bold mb-2 text-red-700 font-mono ${textColorClass}`}>Skills</div>
+        <div className={`text-2xl font-bold mb-2 text-orange-700 font-mono underline ${textColorClass}`}>Skills</div>
         <Progress
           progress={80}
           progressLabelPosition="inside"
           textLabel="Web Design"
           textLabelPosition="outside"
-          size="lg"
+          size="lg bold"
           labelProgress
           labelText
           className={isDarkMode ? 'dark-progress' : 'light-progress'}
-          style={{ color: isDarkMode ? '#fff' : '#000' }} // Adjust text color for better visibility
         />
       </div>
 
@@ -40,7 +38,7 @@ function Component({ isDarkMode }) {
       </div>
 
       <div>
-        <h2 className={`text-2xl font-bold mb-2 mt-10 text-red-700 font-mono ${textColorClass}`}>Languages</h2>
+        <h2 className={`text-2xl font-bold mb-2 mt-10 text-orange-700 font-mono underline ${textColorClass}`}>Languages</h2>
         <div className="mb-3">
           <Progress
             progress={80}

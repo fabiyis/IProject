@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
 import { Button, Navbar } from 'flowbite-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -15,15 +13,17 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
     <Navbar fluid rounded className={navbarClass} style={{ backgroundColor }}>
       <Navbar.Brand as={Link} to="/">
         <img src="/img/seg.JPG" className="rounded-full w-10 mr-3 h-6 sm:h-9" alt="" />
-        <span className={`self-center whitespace-nowrap text-xl font-semibold ${isDarkMode ? 'dark:text-white' : ''}`}>Segun</span>
+        <span className={`self-center whitespace-nowrap text-xl font-semibold ${isDarkMode ? 'dark:text-white' : ''}`}>
+          <span className=' text-orange-700 font-extrabold text-3xl '>S</span>egun
+        </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button style={{ marginRight: '8px' }}>Download cv</Button>
+        <Button style={{ marginRight: '6px' }}>Download cv</Button>
         <Button onClick={toggleDarkMode} className={buttonClass} style={{ marginLeft: '8px' }}>
           {isDarkMode ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
         </Button>
       </div>
-      <Navbar.Collapse>
+      <Navbar.Collapse className=" flex ">
         <Navbar.Link as={Link} to="/" active>
           Home
         </Navbar.Link>
