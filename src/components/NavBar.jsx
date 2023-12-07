@@ -23,19 +23,19 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
       </div>
       <Navbar.Collapse className=" flex gap-5">
         <Navbar.Link as={Link} to="/" active style={{ fontSize: '1.2rem' }}>
-          Home
+          HOME
         </Navbar.Link>
         <Navbar.Link as={Link} to="/about" style={{ fontSize: '1.2rem' }}>
-          About
+          ABOUT
         </Navbar.Link>
         <Navbar.Link as={Link} to="/skills" style={{ fontSize: '1.2rem' }}>
-          Skills
+          SKILLS
         </Navbar.Link>
         <Navbar.Link as={Link} to="/projects" style={{ fontSize: '1.2rem' }}>
-          Projects
+          PROJECTS
         </Navbar.Link>
         <Navbar.Link as={Link} to="/contact"style={{ fontSize: '1.2rem' }}>
-          Contact
+          CONTACT
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
