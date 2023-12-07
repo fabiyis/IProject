@@ -5,38 +5,36 @@ import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
 const NavBar = ({ isDarkMode, toggleDarkMode }) => {
-  const buttonClass = `text-sm font-medium rounded-full ${isDarkMode ? 'bg-slate-700' : 'bg-slate-400'} text-white focus:outline-none`;
-  const navbarClass = `navbar ${isDarkMode ? 'dark-mode-navbar' : ''}`;
-  const backgroundColor = isDarkMode ? ' bg-rose-200' : '';
+  const buttonClass = `text-sm font-medium rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-400'} text-white focus:outline-none`;
+  const navbarClass = `navbar ${isDarkMode ? 'white' : '#333'}`;
 
   return (
-    <Navbar fluid rounded className={navbarClass} style={{ backgroundColor }}>
-      <Navbar.Brand as={Link} to="/">
+    <Navbar fluid rounded className={navbarClass} style={{ backgroundColor: isDarkMode ? '#333' : 'white' }}>
+      <Navbar.Brand as={Link} to="/"className=" text-orange-700">
         <img src="/img/seg.JPG" className="rounded-full w-10 mr-3 h-6 sm:h-9" alt="" />
-        <span className={`self-center whitespace-nowrap text-xl font-semibold ${isDarkMode ? 'dark:text-white' : ''}`}>
+        <span className={`self-center whitespace-nowrap text-3xl font-semibold ${isDarkMode ? 'white' : 'red'}`}>
           <span className=' text-orange-700 font-extrabold text-3xl '>S</span>egun
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button style={{ marginRight: '6px' }}>Download cv</Button>
         <Button onClick={toggleDarkMode} className={buttonClass} style={{ marginLeft: '8px' }}>
           {isDarkMode ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
         </Button>
       </div>
-      <Navbar.Collapse className=" flex ">
-        <Navbar.Link as={Link} to="/" active>
+      <Navbar.Collapse className=" flex gap-5">
+        <Navbar.Link as={Link} to="/" active style={{ fontSize: '1.2rem' }}>
           Home
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/about">
+        <Navbar.Link as={Link} to="/about" style={{ fontSize: '1.2rem' }}>
           About
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/skills">
+        <Navbar.Link as={Link} to="/skills" style={{ fontSize: '1.2rem' }}>
           Skills
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/projects">
+        <Navbar.Link as={Link} to="/projects" style={{ fontSize: '1.2rem' }}>
           Projects
         </Navbar.Link>
-        <Navbar.Link as={Link} to="/contact">
+        <Navbar.Link as={Link} to="/contact"style={{ fontSize: '1.2rem' }}>
           Contact
         </Navbar.Link>
       </Navbar.Collapse>
