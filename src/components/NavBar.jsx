@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
 const NavBar = ({ isDarkMode, toggleDarkMode }) => {
-  const buttonClass = `text-sm font-medium rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-400'} text-white focus:outline-none`;
+  const buttonClass = `text-sm font-sm rounded-full ${isDarkMode ? 'bg-gray-400' : 'bg-gray-400'} text-white focus:outline-none`;
   const navbarClass = `navbar ${isDarkMode ? 'white' : '#333'}`;
 
   return (
@@ -22,7 +22,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
         </Button>
       </div>
       <Navbar.Toggle />
-      <Navbar.Collapse className=' pr-62 text:var(--1f1534-hyphen, #1F1534) space'>
+      <Navbar.Collapse className=' pr-62 text:var(--1f1534-hyphen, #1F1534) space hover:selection:'>
         <Navbar.Link as={Link} to="/"  style={{ fontSize: '1.2rem' }}>
           HOME
         </Navbar.Link>
