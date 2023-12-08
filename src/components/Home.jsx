@@ -15,11 +15,17 @@ const Home = ({ isDarkMode }) => {
   return (
   <>
     <div style={backgroundStyle}>
-      <div className='w-full h-full flex items-center justify-center mt-16'>
-        <div className='text-center hover:bg-gray-900'>
-          <h1 className="text-5xl font-bold max-w-xl mb-4 text-orange-600 ">Hello! I am Segun</h1>
-          <p className="text-2xl font-serif font-bold space-1 text-white">A Frontend developer from Nigeria.</p>
-          <p className="mt-2 text-sm font-bold text-white">I love to build web that is responsive, clean, and user-friendly.</p>
+      <div className="w-full h-full flex items-center justify-center mt-16">
+        <div className="text-center hover:bg-gray-900">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-xl mb-4 text-orange-600">
+           Hello! I am Segun
+          </h1>
+          <p className="text-lg md:text-2xl lg:text-3xl font-serif font-bold space-1 text-white">
+            A Frontend developer from Nigeria.
+          </p>
+          <p className="mt-2 text-sm md:text-base lg:text-lg font-bold text-white">
+           I love to build web that is responsive, clean, and user-friendly.
+          </p>
         </div>
       </div>
       <div className='w-fit ml-6 mt-36 bg-red-300 hover:bg-green-500 hover:text-white border-2 border-c'>

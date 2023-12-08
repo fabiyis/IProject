@@ -21,7 +21,8 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {isDarkMode ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
         </Button>
       </div>
-      <Navbar.Collapse className=" flex gap-7">
+      <Navbar.Toggle />
+      <Navbar.Collapse className=' pr-62 text:var(--1f1534-hyphen, #1F1534) space'>
         <Navbar.Link as={Link} to="/"  style={{ fontSize: '1.2rem' }}>
           HOME
         </Navbar.Link>
