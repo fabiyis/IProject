@@ -72,7 +72,7 @@ function Skills({ isDarkMode }) {
     </div>
 
     <div>
-      <h1 className="text-4xl font-extrabold mb-6 ml-2 text-lime-600 w-fit bg-slate-300">Our Services</h1>
+      <h1 className="text-4xl font-extrabold mb-6 ml-3 text-lime-600 w-fit bg-slate-300">Our Services</h1>
     <div className="card mx-4 bg-white text-gray-800 rounded-md p-6 ">
       <ul style={listStyles}>
           <div className="flex">
