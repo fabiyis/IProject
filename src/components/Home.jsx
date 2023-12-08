@@ -27,12 +27,12 @@ const Home = ({ isDarkMode }) => {
         <Button className=" mb-2 cursor-pointer w-10/12 mt-2 ml-4 items-center font-bold " label="2">Hire us</Button>
       </div> 
     </div>
-    <div className='mt-3'>
+    <div className='mt-3 '>
       <div className="min-h-screen flex flex-col justify-center items-end bg-cover bg-center" style={{ backgroundImage: 'url(/img/slider3.jpg)' }}>
-        <div className=' -mt-56'>
+        <div className=' -mt-56 ml-5'>
           <h1 className="text-6xl font-extrabold mr-10 text-white mb-2 hover:bg-lime-600">MOBILE OPTIMIZED</h1>
           <p className="text-white text-3xl mr-12 font-bold hover:bg-lime-600 hover:w-fit">Website</p>
-          <p className='mt-5 text-2xl text-lime-600 font-semibold hover:bg-slate-50 hover:w-fit'>To Work On All Device</p>
+          <p className='mt-5 text-2xl text-white font-semibold hover:bg-lime-600 hover:w-fit'>To Work On All Device</p>
           <p1 className="text-slate-50 text-lg font-semibold mt-3 hover:bg-lime-600 hover:w-fit ">Mobile, Tablet or Computer Our Websites Just Work Fine.</p1>
           <div>
             <Button className=" mb-2 cursor-pointer w-fit mt-10  items-center font-bold " label="2">Mobile Friendly Websites</Button>

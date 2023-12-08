@@ -13,7 +13,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
       <Navbar.Brand as={Link} to="/"className=" text-orange-700">
         <img src="/img/seg.JPG" className="rounded-full w-10 mr-3 h-6 sm:h-9" alt="" />
         <span className={`self-center whitespace-nowrap text-3xl font-semibold ${isDarkMode ? 'white' : 'red'}`}>
-          <span className=' text-lime-700 font-extrabold text-4xl font-serif '>SeGun</span>
+          <span className=' text-lime-700 font-extrabold text-4xl font-serif '>SeGuN</span>
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
@@ -21,7 +21,7 @@ const NavBar = ({ isDarkMode, toggleDarkMode }) => {
           {isDarkMode ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />}
         </Button>
       </div>
-      <Navbar.Collapse className=" flex gap-5">
+      <Navbar.Collapse className=" flex gap-7">
         <Navbar.Link as={Link} to="/"  style={{ fontSize: '1.2rem' }}>
           HOME
         </Navbar.Link>
