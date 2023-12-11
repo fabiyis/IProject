@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+  }
+  
+  .image-container:hover .image {
+    transform: scale(1.1); 
+  }
+  
+  .logo-container {
+    display: inline-block; /* Ensure the container size matches the image size */
+    overflow: hidden; /* Hide any overflow during the transition */
+  }
+  
+  .logo-image {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .logo-container:hover .logo-image {
+    transform: scale(2.3); /* Scale the image to 1.2 times its original size on hover */
+  }
+  
+  
+  
+  
