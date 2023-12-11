@@ -12,7 +12,7 @@ function Skills({ isDarkMode }) {
      <div className="flex flex-col sm:flex-row  justify-center">
       <div className="mb-8 sm:mr sm:mb-0">
       <h1 className="text-4xl font-extrabold mb-6 text-lime-600 ml-2 bg-slate-300 w-fit">Our Teams</h1>
-      <div className="card mx-4 bg-white text-gray-800 rounded-md p-6">
+      <div className="card mx-4 bg-gray-800 dark:text-white text-white rounded-md p-6">
         <ul style={listStyles}>
           <div className="flex">
             <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 dark:text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
@@ -42,7 +42,7 @@ function Skills({ isDarkMode }) {
       </div>
     </div>
 
-    <div className="card mx-4 bg-white text-gray-800 rounded-md p-6  mt-16 mb-10 ">
+    <div className="card mx-4 text-white  dark:text-white bg-gray-800 rounded-md p-6  mt-16 mb-10 ">
       <ul style={listStyles}>
         <div className="flex">
             <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 dark:text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
@@ -73,7 +73,7 @@ function Skills({ isDarkMode }) {
 
     <div>
       <h1 className="text-4xl font-extrabold mb-6 ml-3 text-lime-600 w-fit bg-slate-300">Our Services</h1>
-    <div className="card mx-4 bg-white text-gray-800 rounded-md p-6 ">
+    <div className="card mx-4 dark:text-white text-white rounded-md p-6  bg-gray-800 ">
       <ul style={listStyles}>
           <div className="flex">
             <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 dark:text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
@@ -103,7 +103,7 @@ function Skills({ isDarkMode }) {
     </div>
     </div>
 
-    <div className="card mx-4 bg-white text-gray-800 rounded-md p-6 mt-16 mb-10">
+    <div className="card mx-4 text-white rounded-md p-6 mt-16 mb-10 dark:text-white  bg-gray-800 ">
       <ul style={listStyles}>
         <div className="flex">
           <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 dark:text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
