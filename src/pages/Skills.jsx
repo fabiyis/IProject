@@ -7,7 +7,7 @@ function Skills({ isDarkMode }) {
   return (
      <div className="min-h-screen justify-center items-center bg-cover bg-center" style={{ backgroundImage: 'url(/img/Laptop-Se.jpg)' }}>
       <div className=" mb-32 pt-10 ">
-        <h1 className="items-center justify-center text-center font-bold text-4xl ">A Website Design You Can Trust!</h1>
+        <h1 className="items-center justify-center text-center font-thin text-5xl -mt-3  ">A Website Design You Can Trust!</h1>
       </div>
      <div className="flex flex-col sm:flex-row  justify-center">
       <div className="mb-8 sm:mr sm:mb-0">
@@ -66,7 +66,7 @@ function Skills({ isDarkMode }) {
            <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 dark:text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
               <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
            </svg>
-           <li className="mb-2">Products Designers</li>   
+           <li className="mb-2">Products Designers..</li>   
         </div>  
       </ul>
     </div>
@@ -124,10 +124,10 @@ function Skills({ isDarkMode }) {
           <li className="mb-2">Talented Programmer</li>
         </div>   
         <div className="flex">
-          <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 dark:text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+          <svg className="w-4 h-4 mt-1 mr-2  text-gray-800 dark:text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
           </svg>
-          <li className="mb-2">Creative Graphic Designers</li>
+          <li className="mb-2 ">Creative Graphic Designers..</li>
         </div>   
       </ul>
     </div>
