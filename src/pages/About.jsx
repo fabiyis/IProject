@@ -16,6 +16,11 @@ function About() {
           I specialize in creating modern<br/> Responsive, and user-friendly Web<br/> Applications using Technologies like<br/> HTML, JavaScript, React, and Node.js.
         </p>
       </div>
+      <div className="ml-11 mt-7">
+        <h className="text-5xl font-thin"> What We Do</h>
+        <h1 className="text-4xl font-thin ">We Are Your Personal Digital</h1>
+        <h3 className="text-3xl font-bold ">Service From Start to End!</h3>
+      </div>
     </div>
   );
 }

@@ -18,8 +18,22 @@
   }
   
   .image-container:hover .image {
-    transform: scale(1.1); /* You can adjust the scale factor as needed */
+    transform: scale(1.1); 
   }
+  
+  .logo-container {
+    display: inline-block; /* Ensure the container size matches the image size */
+    overflow: hidden; /* Hide any overflow during the transition */
+  }
+  
+  .logo-image {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .logo-container:hover .logo-image {
+    transform: scale(2.3); /* Scale the image to 1.2 times its original size on hover */
+  }
+  
   
   
   

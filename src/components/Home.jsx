@@ -15,7 +15,7 @@ const Home = ({ isDarkMode }) => {
   return (
   <>
     <div style={backgroundStyle}>
-      <div className="w-full h-full flex items-center justify-center mt-16">
+      <div className="w-full h-full flex items-center justify-center mt-10">
         <div className="text-center hover:bg-gray-900">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-xl mb-4 text-orange-600">
            Hello! I am Segun
@@ -23,13 +23,29 @@ const Home = ({ isDarkMode }) => {
           <p className="text-lg md:text-2xl lg:text-3xl font-serif font-bold space-1 text-white">
             A Frontend developer from Nigeria.
           </p>
-          <p className="mt-2 text-sm md:text-base lg:text-lg font-bold text-white">
-           I love to build web that is responsive, clean, and user-friendly.
-          </p>
         </div>
       </div>
-      <div className='w-fit ml-6 mt-36 bg-red-300 hover:bg-green-500 hover:text-white border-2 border-c'>
-        <h1 className=' text-slate-950 items-center font-mono text-2xl font-black hover:bg-green-500 hover:text-white'> Lets grow your <br/>business from <br/>the inside out..</h1>
+      <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%' }}>
+      <div style={{ marginRight:100  }}>
+        <h1 className='text-4xl font-extrabold text-white -mr-5 mt-4 bg-black'>WEBSITE DESIGN</h1>
+        <h2 className='text-3xl font-thin text-white mb-3 bg-black'>For only $200</h2>
+        <h3 className=' text-2xl font-thin text-white mb-2 '>Why Using Our Services ?</h3>
+        <div className="flex">
+          <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
+          </svg>
+          <li className="mb-2 text-white font-bold bg-black">Free Lifetime Support</li>
+        </div> 
+        <div className="flex">
+          <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
+          </svg>
+          <li className="mb-2 text-white font-bold bg-black">Unlimited Round of changes</li>
+        </div> 
+      </div>
+    </div>
+      <div className='w-fit ml-6 mt-30 bg-black hover:bg-green-500 hover:text-white border-1 border-c mt-5'>
+        <h1 className=' text-white items-center font-mono text-2xl font-black hover:bg-green-500 hover:text-white'> Lets grow your <br/>business from <br/>the inside out..</h1>
         <Button className=" mb-2 cursor-pointer w-10/12 mt-2 ml-4 items-center font-bold " label="2">Hire us</Button>
       </div> 
     </div>
