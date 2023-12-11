@@ -28,7 +28,7 @@ const Home = ({ isDarkMode }) => {
       <div style={{ display: 'flex', justifyContent: 'flex-end', width: '100%' }}>
       <div style={{ marginRight:100  }}>
         <h1 className='text-4xl font-extrabold text-white -mr-5 mt-4 bg-black'>WEBSITE DESIGN</h1>
-        <h2 className='text-3xl font-thin text-white mb-3 bg-black'>For only $200</h2>
+        <h2 className='text-3xl font-thin text-lime-600 mb-3 bg-black w-fit'>For only $200</h2>
         <h3 className=' text-2xl font-thin text-white mb-2 '>Why Using Our Services ?</h3>
         <div className="flex">
           <svg className="w-4 h-4 mt-1 mr-2 text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
