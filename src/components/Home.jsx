@@ -17,7 +17,7 @@ const Home = ({ isDarkMode }) => {
     <div style={backgroundStyle}>
       <div className="w-full h-full flex items-center justify-center mt-10">
         <div className="text-center hover:bg-gray-900">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-xl mb-4 text-orange-600">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-xl mb-4 text-lime-600">
            Hello! I am Segun
           </h1>
           <p className="text-lg md:text-2xl lg:text-2xl font-serif font-thin space-1 text-white">
