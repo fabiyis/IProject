@@ -31,16 +31,16 @@ const Home = ({ isDarkMode }) => {
         <h2 className='text-3xl font-thin text-white mb-3 bg-black'>For only $200</h2>
         <h3 className=' text-2xl font-thin text-white mb-2 '>Why Using Our Services ?</h3>
         <div className="flex">
-          <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+          <svg className="w-4 h-4 mt-1 mr-2 text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
           </svg>
-          <li className="mb-2 text-white font-bold bg-black">Free Lifetime Support</li>
+          <h1 className="mb-2 text-white font-bold bg-black">Free Lifetime Support</h1>
         </div> 
         <div className="flex">
-          <svg className="w-4 h-4 mt-1 mr-2 text-gray-800 bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+          <svg className="w-4 h-4 mt-1 mr-2 text-white bg-lime-600 rounded-full" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
           </svg>
-          <li className="mb-2 text-white font-bold bg-black">Unlimited Round of changes</li>
+          <h1 className="mb-2 text-white font-bold bg-black">Unlimited Round of changes</h1>
         </div> 
       </div>
     </div>
